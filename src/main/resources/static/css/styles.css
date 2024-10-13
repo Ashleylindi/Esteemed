@@ -1,0 +1,240 @@
+/* Reset styles */
+body, h1, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgba(67, 83, 108); /* Light background for the page */
+    color: rgba(12, 17, 27); /* Dark text color */
+}
+
+/* Custom class for large font size with artistic effects */
+.large-title {
+    font-size: 100px; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: make it bold */
+    color: transparent; /* Make text color transparent for gradient effect */
+    background: linear-gradient(black, grey, white); /* Gradient colors */
+    background-clip: text; /* Clips the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Add a hover effect */
+.large-title:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Navbar styles */
+.w3-top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.w3-bar {
+    background-color: rgba(67, 83, 108); /* White background */
+    padding: 10px 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.w3-bar-item {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000; /* Black text color */
+    transition: background-color 0.3s ease;
+}
+
+.w3-bar-item:hover {
+    background-color: rgba(122, 146, 169); /* Light grey on hover */
+}
+
+.w3-right {
+    float: right; /* Float links to the right */
+}
+
+/* Optional: If using a fixed navbar */
+.w3-bar.w3-fixed-top {
+    top: 0; /* Ensure it stays at the top */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Header styles */
+.w3-display-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.w3-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.w3-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Additional styles for artistic elements */
+.artistic-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+.shape-one {
+    top: -50px;
+    right: 10%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 99, 132, 0.5);
+}
+
+.shape-two {
+    bottom: -60px;
+    left: 15%;
+    width: 150px;
+    height: 150px;
+    background: rgba(54, 162, 235, 0.5);
+}
+
+/* Hover effects */
+.w3-card-4:hover {
+    background-color: rgba(122, 146, 169); /* Change to a light color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.w3-opacity {
+    opacity: 0.8; /* Light opacity for text */
+}
+
+/* Team Section Styles */
+.w3-row-padding {
+    display: flex;  /* Use flexbox for layout */
+    flex-wrap: wrap;  /* Allow items to wrap to the next line if necessary */
+    justify-content: space-between; /* Space between items */
+    margin: 16px 0; /* Margin for spacing */
+}
+
+.w3-col {
+    flex: 1;  /* Make columns flexible */
+    max-width: 23%; /* Control the width of the columns */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 10px; /* Spacing between cards */
+}
+
+.w3-col img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Contact Section Styles */
+.w3-row-padding {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin: 16px 0; /* Margin for spacing */
+}
+
+.w3-col {
+    flex: 1; /* Flexible columns */
+    margin: 10px; /* Spacing between columns */
+}
+
+.w3-card-4 {
+    border-radius: 8px; /* Rounded corners */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.w3-card-4:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Shadow on hover */
+}
+
+.w3-col h3 {
+    margin: 0; /* Remove margin for headings */
+    font-weight: bold; /* Make headings bold */
+}
+
+/* Style for icons */
+.w3-col i {
+    color: #555; /* Color for icons */
+    font-size: 30px; /* Size for icons */
+}
+
+/* Text Centering */
+.w3-center {
+    text-align: center; /* Center align text */
+}
+
+/* Container Styling */
+.w3-container {
+    background-color: grey; /* Light background for contrast */
+}
+
+/* About Section styles */
+#about {
+    padding-top: 80px; /* Space below the navbar */
+    margin-top: 20px; /* Prevent overlap with the header */
+    border: 2px solid black; /* Black border */
+    border-radius: 8px; /* Optional: rounded corners */
+    background-color: rgba(67, 83, 108); /* Light background with some transparency */
+    position: relative; /* Ensure proper stacking */
+    z-index: 1; /* Make sure it stays above the image */
+}
+
+/* Team Section Styles */
+.team-section {
+    border: 2px solid black; /* Black border around the team section */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Inner spacing */
+    margin: 16px 0; /* Outer spacing */
+}
+
+/* Style for the team heading */
+.team-section h3 {
+    margin-bottom: 16px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    color: black; /* Color for the heading */
+}
+
+/* Flex container for team members */
+.team-members {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+}
+
+/* Style for each team member */
+.team-members .w3-col {
+    flex: 1; /* Allow the columns to grow */
+    max-width: 23%; /* Limit max width to keep items in a row */
+    margin: 0 1%; /* Add margin for spacing */
+}
+
+/* Optional: Ensure images are responsive */
+.team-section img {
+    width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Add a border around the contact and about sections */
+#contact,
+#about {
+    border: 2px solid black; /* Black border */
+    padding: 20px; /* Padding for spacing inside the border */
+    margin: 20px 0; /* Margin for spacing outside the border */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Existing styles for other sections */
+.w3-container {
+    background-color: rgba(67, 83, 108); /* Light background for contrast */
+    padding: 20px; /* Padding inside the container */
+}

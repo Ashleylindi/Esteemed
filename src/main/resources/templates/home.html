@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esteemed Home</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar">
+        <a href="#home" class="w3-bar-item"><b>Esteemed</b></a>
+        <!-- Float links to the right, hide on small screens -->
+        <div class="w3-right">
+            <a href="#about" class="w3-bar-item">About</a>
+            <a href="#contact" class="w3-bar-item">Contact</a>
+            <a th:href="@{/register}" class="w3-bar-item">Register</a>
+            <a th:href="@{/login}" class="w3-bar-item">Login</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container" id="home">
+    <img class="w3-image" src="https://www.w3schools.com/w3images/architect.jpg" alt="Mentorship">
+    <div class="w3-display-middle w3-center">
+        <h1 class="large-title"><span class="w3-padding w3-black"></span> <span class="w3-hide-small w3-text-light-grey">Esteemed</span></h1>
+    </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" id="about">
+    <h3 class="w3-border-bottom w3-padding-16">About</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<!-- Team Section -->
+<div class="team-section w3-row-padding w3-grayscale" id="team">
+    <h3 class="w3-border-bottom w3-padding-16">Meet Our Team</h3> <!-- Subtitle -->
+    <div class="team-members"> <!-- Flex container for team members -->
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img src="/static/images/iruka_1.jpg" alt="Iruka" style="width:100%">
+            <h3>Iruka Umino</h3>
+            <p class="w3-opacity">Instructor / Teacher</p>
+            <p>Iruka is a ninja instructor at Konoha Academy who teaches young ninjas. He plays a pivotal role in Naruto Uzumaki's early life, offering guidance and support.</p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img src="/static/images/Kakashi.jpg" alt="Kakashi" style="width:100%">
+            <h3>Kakashi Hatake</h3>
+            <p class="w3-opacity">Jonin / Team 7 Leader</p>
+            <p>Kakashi is a highly skilled ninja and the leader of Team 7, which includes Naruto, Sasuke, and Sakura. He guides and mentors his students as they navigate their training and missions.</p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img src="/static/images/Tsunade_1.jpg" alt="Tsunade" style="width:100%">
+            <h3>Tsunade Senju</h3>
+            <p class="w3-opacity">Fifth Hokage / Medical Ninja</p>
+            <p>While primarily serving as the Hokage, Tsunade oversees the academy's operations and provides support to young ninjas. She is also an accomplished medical ninja.</p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img src="/static/images/Madara_1.jpg" alt="Madara" style="width:100%">
+            <h3>Madara Uchiha</h3>
+            <p class="w3-opacity">Legendary Shinobi / Antagonist</p>
+            <p>Madara is one of the most powerful ninjas in the series' history. He represents the dark side of ninja ideology and serves as a significant figure influencing the events that affect the academy and its students.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey w3-padding-64" id="contact">
+    <h2 class="w3-text-dark-grey">Contact Us</h2> <!-- Center alignment removed -->
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card-4 w3-hover-shadow w3-padding w3-padding-32"> <!-- Add padding -->
+                <h3 class="w3-center">Location</h3>
+                <p class="w3-center"><i class="fa fa-map-marker fa-2x w3-text-teal"></i></p>
+                <p class="w3-center">Johannesburg, South Africa</p>
+            </div>
+        </div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card-4 w3-hover-shadow w3-padding w3-padding-32"> <!-- Add padding -->
+                <h3 class="w3-center">Phone</h3>
+                <p class="w3-center"><i class="fa fa-phone fa-2x w3-text-teal"></i></p>
+                <p class="w3-center">+1 234 567 890</p>
+            </div>
+        </div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card-4 w3-hover-shadow w3-padding w3-padding-32"> <!-- Add padding -->
+                <h3 class="w3-center">Email</h3>
+                <p class="w3-center"><i class="fa fa-envelope fa-2x w3-text-teal"></i></p>
+                <p class="w3-center"><a href="mailto:example@example.com">HeadOffice@Esteemed.com</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card-4 w3-hover-shadow w3-padding w3-padding-32"> <!-- Add padding -->
+                <h3 class="w3-center">Website</h3>
+                <p class="w3-center"><i class="fa fa-globe fa-2x w3-text-teal"></i></p>
+                <p class="w3-center"><a href="#">www.esteemed.com</a></p>
+            </div>
+        </div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card-4 w3-hover-shadow w3-padding w3-padding-32"> <!-- Add padding -->
+                <h3 class="w3-center">Twitter</h3>
+                <p class="w3-center"><i class="fa fa-twitter fa-2x w3-text-teal"></i></p>
+                <p class="w3-center"><a href="https://twitter.com/yourprofile" target="_blank">@Esteemed</a></p>
+            </div>
+        </div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card-4 w3-hover-shadow w3-padding w3-padding-32"> <!-- Add padding -->
+                <h3 class="w3-center">LinkedIn</h3>
+                <p class="w3-center"><i class="fa fa-linkedin fa-2x w3-text-teal"></i></p>
+                <p class="w3-center"><a href="https://linkedin.com/in/yourprofile" target="_blank">Esteemed</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
